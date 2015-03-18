@@ -131,3 +131,52 @@ Pour cela, vous devrez:
 
 Si votre implémentation est correcte, le test unitaire `DeadCharacterFileTest` sera passant.
 ====
+
+== Exercice 3 : petit processing entre ennemis
+
+Le but du jeu ici consiste à prendre en main l'API d'écriture de
+sources Java avec l'API link:../doc/javapoet/README.html[JavaPoet, role="external", window="_blank"]
+dans le contexte d'un processor d'`@Erbfeind` que l'on va également écrire.
+
+
+=== Étape 1 : on s'active
+
+[IMPORTANT]
+====
+1. observez l'implémentation initiale de `ErbfeindGenerator`
+2. compilez le projet `exo3-processor` (`mvn clean install`)
+3. de même, compilez le projet `exo3-subject`
+====
+
+Hmmm, à ce stade, "What's going on here?" aurait du apparaître
+dans les logs affichés lors de la compilation.
+
+Ou peut-être pas. Remémorez-vous l'ensemble des déclarations
+auxquelles doit procéder un processor.
+
+Vous ne voyez toujours pas ?
+
+Nous avons prétendu jusqu'ici qu'il s'agissait d'un processor
+d'`@Erbfeind` mais le processor l'a-t-il correctement déclaré ?
+
+Complétez la classe `ErbfeindGenerator` en ce sens ;)
+
+
+=== Étape 2 : un peu de poésie dans les sources !
+
+Il est temps de générer à tout berzingue avec
+link:../doc/javapoet/README.html[JavaPoet, role="external", window="_blank"].
+
+[IMPORTANT]
+====
+Complétez la classe `ErbfeindGenerator` de `exo3-processor` afin de faire passer au
+vert les tests de `Step2Test` dans `exo3-subject`.
+
+Il est conseillé de suivre les tests dans l'ordre.
+Ils vont en difficulté croissante.
+====
+
+
+=== Étape 3 : ton ennemi, tu n'écraseras pas !
+
+TODO
